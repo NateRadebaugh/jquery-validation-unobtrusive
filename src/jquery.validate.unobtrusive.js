@@ -148,7 +148,8 @@
                     success: function () {
                         onSuccess.apply(form, arguments);
                         execInContext("success", arguments);
-                    }
+                    },
+                    ignore: defaultOptions.ignore
                 },
                 attachValidation: function () {
                     $form
